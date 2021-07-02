@@ -73,7 +73,10 @@ void divide()
   float a,b;
   printf("Enter two numbers\n");
   scanf("%f%f",&a,&b);
-  printf("division of %g and %g is %g\n",a,b,a/b);
+  if(b==0)
+    printf("Division by 0 is undefined\n");
+  else
+    printf("division of %g and %g is %g\n",a,b,a/b);
 }
 
 void modulus()
@@ -81,6 +84,9 @@ void modulus()
   int a,b;
   printf("Enter two numbers\n");
   scanf("%d%d",&a,&b);
-  printf("Remainder of %d when divided by %d is %d\n",a,b,a%b);
+  if(b==0)
+    printf("Division by 0 is undefined\n");
+  else
+    printf("Remainder of %d when divided by %d is %d\n",a,b,a%b);
 }
 
