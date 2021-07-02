@@ -1,6 +1,5 @@
 //C Program to simulate a simple calculator
 #include <stdio.h>
-#include<windows.h>
 
 void addition();
 void subtraction();
@@ -10,10 +9,10 @@ void divide();
 int main()
 {
     int opt;
-    system("color 02");
     printf("\t***MENU***\n\n1-Addition\n2-Substraction\n3-Multiplication\n4-Division\n5-Exit\n");
-    printf("\tEnter your choice : ");
+    printf("\n\tEnter your choice : ");
     scanf("%d",&opt);
+    printf("\n");
     switch(opt)
     {
       case 1:
@@ -72,4 +71,5 @@ void divide()
   scanf("%f%f",&a,&b);
   printf("division of %.2f and %.2f is %.2f",a,b,a/b);
 }
+
 
