@@ -3,16 +3,42 @@
 
 int main()
 {
-     char ch;
-     int n1,n2;
-
-     printf("\n\tChoose an operator(+,-,*,/,%): ");
-     scanf("%c",&ch);
+     int opt,num1,num2;
 
      printf("Enter first number: ");
-     scanf("%d", &n1);
+     scanf("%d", &num1);
      printf("Enter second number: ");
-     scanf("%d", &n2);
-
-    return 0;
+     scanf("%d", &num2); 
+      printf("\nInput your option :\n");
+    printf("1-Addition.\n2-Substraction.\n3-Multiplication.\n4-Division.\n5-Exit.\n");
+    scanf("%d",&opt);
+    switch(opt) {
+      case 1:
+        printf("The Addition of  %d and %d is: %d\n",num1,num2,num1+num2);
+        break;
+        
+      case 2:
+        printf("The Substraction of %d  and %d is: %d\n",num1,num2,num1-num2);
+        break;
+        
+      case 3:
+        printf("The Multiplication of %d  and %d is: %d\n",num1,num2,num1*num2);
+        break;  
+      
+      case 4:
+        if(num2==0) {
+          printf("The second integer is zero. Devide by zero.\n");
+        } else {
+          printf("The Division of %d  and %d is : %d\n",num1,num2,num1/num2);
+        }  
+        break;
+        
+      case 5: 
+        break; 
+        
+      default:
+        printf("Input correct option\n");
+        break; 
+    }
+return 0;
 }
