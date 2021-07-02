@@ -1,6 +1,8 @@
 //C Program to simulate a simple calculator
 #include <stdio.h>
 
+void addition();
+
 int main()
 {
     int opt;
@@ -9,7 +11,7 @@ int main()
     switch(opt)
     {
       case 1:
-        
+        addition();
         break;
         
       case 2:
@@ -32,4 +34,11 @@ int main()
         break; 
     }
     return 0;
+}
+void addition()
+{
+  int a,b;
+  printf("Enter two numbers\n");
+  scanf("%d%d",&a,&b);
+  printf("Sum of %d and %d is %d",a,b,a+b);
 }
