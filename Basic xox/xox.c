@@ -30,7 +30,7 @@ int main()
         }
         else        //player 1
         {
-            printf("Player 2 Enter the grid you want to make Y::\n");
+            printf("Player 2 Enter the grid you want to make O:\n");
             scanf("%d", &y);
             Array[y]='O';
             flag=1;
