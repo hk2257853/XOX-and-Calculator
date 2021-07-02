@@ -15,7 +15,7 @@ int main()
         break;
         
       case 2:
-        
+        subtraction();
         break;
         
       case 3:
@@ -42,3 +42,12 @@ void addition()
   scanf("%d%d",&a,&b);
   printf("Sum of %d and %d is %d",a,b,a+b);
 }
+
+void subtraction()
+{
+  int a,b;
+  printf("Enter two numbers\n");
+  scanf("%d%d",&a,&b);
+  printf("Sum of %d and %d is %d",a,b,a-b);
+}
+
