@@ -1,18 +1,17 @@
 //C Program to simulate a simple calculator
 #include <stdio.h>
-#include<windows.h>
 
 void addition();
 void subtraction();
 void multiply();
 void divide();
+void modulus();
 
 int main()
 {
     int opt;
-    system("color 02");
-    printf("\t***MENU***\n\n1-Addition\n2-Substraction\n3-Multiplication\n4-Division\n5-Exit\n");
-    printf("\tEnter your choice : ");
+    printf("\t***MENU***\n\n1-Addition\n2-Substraction\n3-Multiplication\n4-Division\n5-Modulus\n");
+    printf("Enter your choice : ");
     scanf("%d",&opt);
     switch(opt)
     {
@@ -32,7 +31,8 @@ int main()
         divide();
         break;
         
-      case 5: 
+      case 5:
+        modulus();
         break; 
         
       default:
@@ -73,3 +73,10 @@ void divide()
   printf("division of %.2f and %.2f is %.2f",a,b,a/b);
 }
 
+void modulus()
+{
+  int a,b;
+  printf("Enter two numbers\n");
+  scanf("%d%d",&a,&b);
+  printf("Remainder of %d when divided by %d is %d",a,b,a%b);
+}
