@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 void addition();
+void subtraction();
 
 int main()
 {
