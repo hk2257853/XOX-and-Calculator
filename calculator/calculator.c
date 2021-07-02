@@ -83,3 +83,4 @@ void modulus()
   scanf("%d%d",&a,&b);
   printf("Remainder of %d when divided by %d is %d",a,b,a%b);
 }
+
